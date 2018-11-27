@@ -104,6 +104,23 @@ query {
 
 ### 19. Add Skeleton CSS and Base Styles
 
+<br/>
+
+### 20. Create Signup Mutation
+
+```js
+mutation {
+  signupUser(username: "John", email: "john@gmail.com", password: "John"){
+    token
+  }
+}
+
+```
+
+
+<br/>
+
+![Application](/img/pic-20-01.png?raw=true)
 
 
 ---
