@@ -12,3 +12,21 @@
 <br/>
 
 ### 10. Create GraphQL Schema
+
+<br/>
+
+### 11. Add bodyParser Middleware and Root Query Type
+
+http://localhost:3000/graphiql
+
+<br/>
+
+![Application](/img/pic-11-01.png?raw=true)
+
+
+
+---
+
+**Marley**
+
+<a href="https://jsdev.org">jsdev.org</a>  
