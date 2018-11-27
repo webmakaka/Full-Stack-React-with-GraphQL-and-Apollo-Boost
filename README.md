@@ -125,7 +125,11 @@ mutation {
 
 ### 21. Hash User Password with bcrypt
 
+<br/>
 
+### 22. Add Routing with react-router-dom
+
+    $ npm install --save react-router-dom
 
 ---
 
