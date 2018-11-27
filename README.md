@@ -24,6 +24,33 @@ http://localhost:3000/graphiql
 ![Application](/img/pic-11-01.png?raw=true)
 
 
+<br/>
+
+### 12. Create First Mutation
+
+
+```js
+
+mutation {
+  addRecipe(
+    name: "Grilled Cheese Sandwich",
+    description: "A tasty sandwich",
+    category: "Sandwiches",
+    instructions: "Grill it!"
+  ) {
+    name
+    category
+    description
+    instructions
+  }
+  
+}
+
+```
+
+<br/>
+
+![Application](/img/pic-12-01.png?raw=true)
 
 ---
 
