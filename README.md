@@ -52,6 +52,22 @@ mutation {
 
 ![Application](/img/pic-12-01.png?raw=true)
 
+<br/>
+
+### 13. Create First Query
+
+```js
+query {
+  getAllRecipes {
+    _id
+    name
+    category
+    likes
+    createdDate
+  }
+}
+```
+
 ---
 
 **Marley**
