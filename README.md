@@ -3,4 +3,12 @@
 
 <br/>
 
-### 8. Create Mongoose Schemas
+### 08. Create Mongoose Schemas
+
+<br/>
+
+### 09. Add Apollo-Express Middleware
+
+<br/>
+
+### 10. Create GraphQL Schema
