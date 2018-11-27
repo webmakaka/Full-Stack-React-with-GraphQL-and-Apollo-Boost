@@ -68,6 +68,32 @@ query {
 }
 ```
 
+<br/>
+
+### 14. Create React Application with create-react-app
+
+    $ cd ../client/
+    $ npx create-react-app .
+
+
+<br/>
+
+### 15. Clean Up App.js and Add Components Folder
+
+    $ cd ../server/
+    $ npm run dev
+
+<br/>
+
+### 16. Add Client Dependencies and Set Up ApolloClientApolloProvider
+
+    $ cd client
+    $ npm install --save graphql
+    $ npm install --save react-apollo apollo-boost
+    $ npm install --save jwt-decode
+
+
+
 ---
 
 **Marley**
