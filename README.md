@@ -117,10 +117,14 @@ mutation {
 
 ```
 
-
 <br/>
 
 ![Application](/img/pic-20-01.png?raw=true)
+
+<br/>
+
+### 21. Hash User Password with bcrypt
+
 
 
 ---

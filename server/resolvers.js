@@ -27,15 +27,7 @@ exports.resolvers = {
     },
 
     signupUser: async (root, { username, email, password }, { User }) => {
-      console.log('user');
-      console.log(username);
-      console.log(email);
-      console.log(password);
-
       const user = await User.findOne({ username });
-
-      console.log('user1');
-      console.log(user);
 
       if (user) { throw new Error('User already exists'); }
 
