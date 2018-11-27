@@ -100,6 +100,12 @@ query {
 
 ### 18. Add cors Middleware to Prevent Cross-Origin Errors
 
+<br/>
+
+### 19. Add Skeleton CSS and Base Styles
+
+
+
 ---
 
 **Marley**
