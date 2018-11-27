@@ -92,7 +92,13 @@ query {
     $ npm install --save react-apollo apollo-boost
     $ npm install --save jwt-decode
 
+<br/>
 
+### 17. Create Queries Folder, Write First Apollo Query
+
+<br/>
+
+### 18. Add cors Middleware to Prevent Cross-Origin Errors
 
 ---
 

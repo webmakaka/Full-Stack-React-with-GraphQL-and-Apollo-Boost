@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 require('dotenv').config({
   path: 'variables.env'
@@ -28,6 +29,13 @@ mongoose
   .catch(err => console.log(err));
 
 const app = express();
+
+const corsOptions = {
+  origin: 'http://localhost',
+  credentials: true
+};
+
+app.use(cors(corsOptions));
 
 app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
 
