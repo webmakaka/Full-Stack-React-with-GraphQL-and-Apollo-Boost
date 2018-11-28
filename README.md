@@ -213,6 +213,14 @@ mutation($username: String!, $password: String!) {
 
 ### 35. Add Navbar Links For Auth User
 
+<br/>
+
+### 36. Make Navbar Dynamic, Add Custom Heading
+
+<br/>
+
+![Application](/img/pic-36-01.png?raw=true)
+
 ---
 
 **Marley**
