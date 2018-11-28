@@ -189,6 +189,15 @@ mutation($username: String!, $password: String!) {
 ### 31. Verify JWT on Backend to Get Current User
 
 
+<br/>
+
+### 32. Add getCurrentUser Query, Create withSession Component
+
+<br/>
+
+![Application](/img/pic-32-01.png?raw=true)
+
+
 ---
 
 **Marley**

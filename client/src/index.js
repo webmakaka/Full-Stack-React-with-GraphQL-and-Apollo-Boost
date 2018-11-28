@@ -5,8 +5,10 @@ import "./index.css";
 import App from "components/App";
 import Signin from "components/Auth/Signin";
 import Signup from "components/Auth/Signup";
+import withSession from "components/withSession";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
+
 
 const client = new ApolloClient({
   uri: "http://localhost:3000/graphql",
@@ -24,7 +26,7 @@ const client = new ApolloClient({
   onError: ({ networkError }) => {
     if (networkError) { console.log('Network Error', networkError);}
 
-    if (networkError.statusCode === 400) { localStorage.removeItem('token'); }
+    // if (networkError.statusCode === 400) { localStorage.removeItem('token'); }
   }
 });
 
@@ -39,9 +41,11 @@ const Root = () => (
   </Router>
 );
 
+const RootWithSession = withSession(Root);
+
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <Root />
+    <RootWithSession />
   </ApolloProvider>,
   document.getElementById("root")
 );
