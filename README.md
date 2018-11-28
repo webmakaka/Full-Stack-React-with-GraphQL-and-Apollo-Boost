@@ -201,6 +201,14 @@ mutation($username: String!, $password: String!) {
 
 ### 33. Redirect Upon SigninSignup, Refetch getCurrentUser Query Upon Redirect
 
+<br/>
+
+### 34. Add Navbar Component, Add Search Component
+
+<br/>
+
+![Application](/img/pic-34-01.png?raw=true)
+
 ---
 
 **Marley**
