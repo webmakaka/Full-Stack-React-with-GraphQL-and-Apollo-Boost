@@ -155,6 +155,22 @@ mutation {
 
 ![Application](/img/pic-27-01.png?raw=true)
 
+<br/>
+
+### 28. Create Signin Mutation on Backend
+
+```js
+mutation($username: String!, $password: String!) {
+  signinUser(username: $username, password: $password){
+    token
+  }
+}
+```
+
+<br/>
+
+![Application](/img/pic-28-01.png?raw=true)
+
 ---
 
 **Marley**
