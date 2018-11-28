@@ -184,6 +184,11 @@ mutation($username: String!, $password: String!) {
 
 ### 30. Add Token to Local Storage, Put Token on Authorization Header
 
+<br/>
+
+### 31. Verify JWT on Backend to Get Current User
+
+
 ---
 
 **Marley**
