@@ -180,6 +180,10 @@ mutation($username: String!, $password: String!) {
 
 ![Application](/img/pic-29-01.png?raw=true)
 
+<br/>
+
+### 30. Add Token to Local Storage, Put Token on Authorization Header
+
 ---
 
 **Marley**

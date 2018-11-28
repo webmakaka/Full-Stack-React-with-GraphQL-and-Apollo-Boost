@@ -37,6 +37,12 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+app.use(async (req, res, next) => {
+  const token = req.headers['authorization'];
+  console.log(token);
+  next();
+});
+
 app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
 
 app.use('/graphql', bodyParser.json(), graphqlExpress({
