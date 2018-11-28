@@ -139,6 +139,14 @@ mutation {
 
 ### 24. Manage Input State in Signup Form
 
+<br/>
+
+### 25. Add Mutation Component to Signup Component, Write SIGNUP_USER Apollo Mutation
+
+<br/>
+
+### 26. Add onSubmit to Signup Form, Run Signup Mutation on Client
+
 ---
 
 **Marley**
