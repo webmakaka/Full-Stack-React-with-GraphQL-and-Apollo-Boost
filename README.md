@@ -197,6 +197,9 @@ mutation($username: String!, $password: String!) {
 
 ![Application](/img/pic-32-01.png?raw=true)
 
+<br/>
+
+### 33. Redirect Upon SigninSignup, Refetch getCurrentUser Query Upon Redirect
 
 ---
 

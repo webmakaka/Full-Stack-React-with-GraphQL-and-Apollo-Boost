@@ -13,7 +13,7 @@ exports.resolvers = {
       return allRecipes;
     },
     getCurrentUser: async (root, args, { currentUser, User }) => {
-      console.log('getCurrentUser');
+      console.log('resolvers: getCurrentUser');
 
       if (!currentUser) { return null; }
 
