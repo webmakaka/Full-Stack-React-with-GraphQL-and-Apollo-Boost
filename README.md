@@ -221,6 +221,10 @@ mutation($username: String!, $password: String!) {
 
 ![Application](/img/pic-36-01.png?raw=true)
 
+<br/>
+
+### 37. Implement Signout Button
+
 ---
 
 **Marley**
