@@ -147,6 +147,14 @@ mutation {
 
 ### 26. Add onSubmit to Signup Form, Run Signup Mutation on Client
 
+<br/>
+
+### 27. Create Error Component, Clear State Upon Submit, Add Form Validation
+
+<br/>
+
+![Application](/img/pic-27-01.png?raw=true)
+
 ---
 
 **Marley**

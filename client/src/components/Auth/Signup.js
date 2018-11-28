@@ -1,14 +1,22 @@
 import React from 'react';
 import { Mutation } from 'react-apollo';
 import { SIGNUP_USER} from 'queries';
+import Error from 'components/Error';
+
+const initialState = {
+  username: "",
+  email: "",
+  password: "",
+  passwordConfirmation: ""
+};
 
 class Signup extends React.Component {
-  state = {
-    username: "",
-    email: "",
-    password: "",
-    passwordConfirmation: ""
-  };
+
+  state = {...initialState};
+
+  clearState = () => {
+    this.setState({ ...initialState });
+  }
 
   handleChange = event => {
     const { name, value } = event.target;
@@ -19,8 +27,18 @@ class Signup extends React.Component {
     event.preventDefault();
     signupUser().then(data => {
       console.log(data);
+
+      this.clearState();
     });
   };
+
+  validateForm = () => {
+    const { username, email, password, passwordConfirmation } = this.state;
+
+    const isInvalid = !username || !email || !password || password !== passwordConfirmation;
+
+    return isInvalid;
+  }
 
   render() {
     const { username, email, password, passwordConfirmation } = this.state;
@@ -66,9 +84,15 @@ class Signup extends React.Component {
                   value={passwordConfirmation}
                   onChange={this.handleChange}
                 />
-                <button type="submit" className="button-primary">
+                <button 
+                  disabled={loading || this.validateForm()}
+                  type="submit" 
+                  className="button-primary">
                   Submit
                 </button>
+
+                {error && <Error error={error} />}
+
               </form>
             );
           }}
