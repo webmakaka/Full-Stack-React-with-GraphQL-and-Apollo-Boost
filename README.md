@@ -209,6 +209,10 @@ mutation($username: String!, $password: String!) {
 
 ![Application](/img/pic-34-01.png?raw=true)
 
+<br/>
+
+### 35. Add Navbar Links For Auth User
+
 ---
 
 **Marley**
