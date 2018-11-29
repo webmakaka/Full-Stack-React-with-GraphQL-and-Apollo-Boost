@@ -292,6 +292,14 @@ query($_id:ID!) {
 
 ### 45. Learning and Implementing Optimistic UI
 
+<br/>
+
+### 46. Create searchRecipes Query on Backend, add Apollo Query to Search Component
+
+<br/>
+
+![Application](/img/pic-46-01.png?raw=true)
+
 ---
 
 **Marley**
