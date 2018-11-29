@@ -229,7 +229,9 @@ mutation($username: String!, $password: String!) {
 
 ### 38. Map Over Recipes, Create Recipe Item Component
 
+<br/>
 
+### 39. Create Recipe Page, Get Recipe Id From Path
 
 ---
 
