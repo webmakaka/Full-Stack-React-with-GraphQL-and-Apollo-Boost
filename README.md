@@ -233,6 +233,32 @@ mutation($username: String!, $password: String!) {
 
 ### 39. Create Recipe Page, Get Recipe Id From Path
 
+<br/>
+
+### 40. Add getRecipe Query in Backend, Run Query on Recipe Page
+
+```js
+query($_id:ID!) {
+  getRecipe(_id: $_id) {
+    _id
+    name
+    category
+    description
+    instructions
+    createdDate
+    likes
+  }
+}
+```
+
+<br/>
+
+![Application](/img/pic-40-01.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-40-02.png?raw=true)
+
 ---
 
 **Marley**
