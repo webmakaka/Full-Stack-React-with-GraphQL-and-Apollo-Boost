@@ -308,6 +308,10 @@ query($_id:ID!) {
 
 ![Application](/img/pic-47-01.png?raw=true)
 
+<br/>
+
+### 48. Add SearchItem Component
+
 ---
 
 **Marley**
