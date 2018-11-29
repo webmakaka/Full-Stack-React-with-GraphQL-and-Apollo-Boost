@@ -271,6 +271,18 @@ query($_id:ID!) {
 
 ![Application](/img/pic-42-01.png?raw=true)
 
+<br/>
+
+### 43. Implement addRecipe Mutation on Client
+
+<br/>
+
+![Application](/img/pic-43-01.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-43-02.png?raw=true)
+
 ---
 
 **Marley**
