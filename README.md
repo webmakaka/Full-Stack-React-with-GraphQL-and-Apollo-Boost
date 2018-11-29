@@ -300,6 +300,14 @@ query($_id:ID!) {
 
 ![Application](/img/pic-46-01.png?raw=true)
 
+<br/>
+
+### 47. Index Recipe Fields, Perform Search Query on Input Change Event
+
+<br/>
+
+![Application](/img/pic-47-01.png?raw=true)
+
 ---
 
 **Marley**
