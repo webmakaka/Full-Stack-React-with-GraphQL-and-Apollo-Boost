@@ -312,6 +312,14 @@ query($_id:ID!) {
 
 ### 48. Add SearchItem Component
 
+<br/>
+
+### 49. Add UserInfo Component to Profile Page
+
+<br/>
+
+![Application](/img/pic-49-01.png?raw=true)
+
 ---
 
 **Marley**
