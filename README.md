@@ -328,6 +328,10 @@ query($_id:ID!) {
 
 ![Application](/img/pic-50-01.png?raw=true)
 
+<br/>
+
+### 51. Add Route Protection with withAuth Component
+
 ---
 
 **Marley**

@@ -10,7 +10,7 @@ import Search from "components/Recipe/Search";
 import AddRecipe from "components/Recipe/AddRecipe";
 import RecipePage from "components/Recipe/RecipePage";
 import Profile from "components/Profile/Profile";
-import withSession from "components/withSession";
+import withSession from "components/HOC/withSession";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 
