@@ -283,6 +283,11 @@ query($_id:ID!) {
 
 ![Application](/img/pic-43-02.png?raw=true)
 
+
+<br/>
+
+### 44. Clear State and Redirect Upon addRecipe Mutation
+
 ---
 
 **Marley**

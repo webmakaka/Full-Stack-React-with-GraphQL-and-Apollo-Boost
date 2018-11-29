@@ -25,13 +25,8 @@ class Signin extends React.Component {
   handleSubmit = (event, signinUser) => {
     event.preventDefault();
     signinUser().then(async ({ data }) => {
-      console.log('signinUser');
-      console.log(data);
-
       localStorage.setItem('token', data.signinUser.token);
-
       await this.props.refetch();
-
       this.clearState();
       this.props.history.push('/');
     });
