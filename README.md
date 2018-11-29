@@ -288,6 +288,10 @@ query($_id:ID!) {
 
 ### 44. Clear State and Redirect Upon addRecipe Mutation
 
+<br/>
+
+### 45. Learning and Implementing Optimistic UI
+
 ---
 
 **Marley**

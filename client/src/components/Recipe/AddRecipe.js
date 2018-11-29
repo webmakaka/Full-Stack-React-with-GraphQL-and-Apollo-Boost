@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'; 
 import { Mutation } from 'react-apollo';
-import { ADD_RECIPE } from 'queries';
+import { ADD_RECIPE, GET_ALL_RECIPES } from 'queries';
 import Error from 'components/Error';
 
 const initialState = {
@@ -38,18 +38,26 @@ class AddRecipe extends React.Component {
   handleSubmit = (event, addRecipe) => {
     event.preventDefault();
     addRecipe().then(({ data }) => {
-      console.log(data);
-
+      //console.log(data);
       this.clearState();
       this.props.history.push("/");
     });
   }
   
-
   validateForm = () => {
     const { name, category, description, instructions } = this.state;
     const isInvalid = !name || !category || !description || !instructions;
     return isInvalid;
+  }
+
+  updateCache = (cache, { data: { addRecipe } }) => {
+    const { getAllRecipes } = cache.readQuery({ query: GET_ALL_RECIPES});
+    cache.writeQuery({
+      query: GET_ALL_RECIPES,
+      data: {
+        getAllRecipes: [addRecipe, ...getAllRecipes]
+      }
+    })
   }
 
   render() {
@@ -58,7 +66,11 @@ class AddRecipe extends React.Component {
 
     return (
       
-      <Mutation mutation={ADD_RECIPE} variables={{ name, category, description, instructions, username }}>
+      <Mutation 
+        mutation={ADD_RECIPE} 
+        variables={{ name, category, description, instructions, username }}
+        update={this.updateCache}
+         >
 
       {( addRecipe, { data, loading, error }) => {
 
