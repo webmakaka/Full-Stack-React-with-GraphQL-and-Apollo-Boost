@@ -320,6 +320,14 @@ query($_id:ID!) {
 
 ![Application](/img/pic-49-01.png?raw=true)
 
+<br/>
+
+### 50. Add UserRecipes Component to Profile Page, Implement getUserRecipes Query
+
+<br/>
+
+![Application](/img/pic-50-01.png?raw=true)
+
 ---
 
 **Marley**
