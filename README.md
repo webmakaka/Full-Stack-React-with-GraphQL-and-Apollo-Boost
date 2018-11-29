@@ -259,6 +259,18 @@ query($_id:ID!) {
 
 ![Application](/img/pic-40-02.png?raw=true)
 
+<br/>
+
+### 41. Output getRecipe Data to Recipe Page, Scaffold Add Recipe Form
+
+<br/>
+
+### 42. Make AddRecipe a Stateful Component
+
+<br/>
+
+![Application](/img/pic-42-01.png?raw=true)
+
 ---
 
 **Marley**

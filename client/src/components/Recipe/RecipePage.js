@@ -16,9 +16,19 @@ const RecipePage = ({ match }) => {
 
       if (error) return <div>Error</div>;
 
-      console.log(data);
+      return (<div className="App">
 
-      return <div>Recipe Page</div>;
+      <h2>{data.getRecipe.name}</h2>
+
+      <p> Category: {data.getRecipe.category}</p>
+      <p> Description: {data.getRecipe.description}</p>
+      <p> Instructions: {data.getRecipe.instructions}</p>
+      <p> Likes: {data.getRecipe.likes}</p>
+      <p> Created By: {data.getRecipe.username}</p>
+
+      <button>Like</button>
+      
+      </div>);
     }}
 
     </Query>
