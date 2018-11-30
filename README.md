@@ -360,6 +360,10 @@ query($_id:ID!) {
 
 ### 58. Add and Implement likeRecipe Mutation
 
+<br/>
+
+### 59. Develop Client-side Logic to Properly Toggle Like
+
 ---
 
 **Marley**
