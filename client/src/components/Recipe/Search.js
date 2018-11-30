@@ -28,7 +28,9 @@ class Search extends React.Component {
       {(client) => (
 
         <div className="App">
-          <input type="search" placehoder="Search for Recipes" onChange={async (event) => {
+          <input type="search" 
+            className="search"
+            placehoder="Search for Recipes" onChange={async (event) => {
 
             event.persist();
 

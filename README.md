@@ -430,6 +430,10 @@ http://www.davidhu.io/react-spinners/
     $ cd ../client/
     $ npm install --save react-spinners
 
+<br/>
+
+### 72. Style Searchbar and Redeploy
+
 ---
 
 **Marley**
