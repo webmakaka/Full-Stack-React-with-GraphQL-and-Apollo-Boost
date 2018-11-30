@@ -388,6 +388,10 @@ query($_id:ID!) {
 
 ### 64. Add Additional CSS to Project
 
+<br/>
+
+### 65. Adds imageUrl field on Recipe model and imageUrl input in addRecipe
+
 ---
 
 **Marley**

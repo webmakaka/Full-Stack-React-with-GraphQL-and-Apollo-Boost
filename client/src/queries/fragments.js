@@ -5,6 +5,7 @@ export const recipeFragments = {
     fragment CompleteRecipe on Recipe {
       _id
       name
+      imageUrl
       category
       description
       instructions
