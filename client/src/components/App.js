@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { Query } from 'react-apollo';
 import { GET_ALL_RECIPES } from 'queries';
+import Spinner from 'components/Spinner';
 import RecipeItem from 'components/Recipe/RecipeItem';
 import posed from 'react-pose';
 
@@ -41,7 +42,7 @@ class App extends React.Component {
   <Query query={GET_ALL_RECIPES}>
     { ( { data, loading, error } ) => {
 
-      if(loading) return <div>Loading</div>
+      if(loading) return <Spinner/>
 
       if(error) return <div>Error</div>
 

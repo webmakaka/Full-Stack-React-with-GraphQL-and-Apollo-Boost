@@ -421,6 +421,14 @@ https://popmotion.io/pose/
     $ cd ../client/
     $ npm install --save react-pose
 
+<br/>
+
+### 71. Add Spinners When Loading
+
+http://www.davidhu.io/react-spinners/
+
+    $ cd ../client/
+    $ npm install --save react-spinners
 
 ---
 

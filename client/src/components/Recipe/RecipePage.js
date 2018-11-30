@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import Spinner from 'components/Spinner';
 import LikeRecipe from 'components/Recipe/LikeRecipe';
 import { Query } from 'react-apollo';
 import { GET_RECIPE } from '../../queries';
@@ -13,7 +14,7 @@ const RecipePage = ({ match }) => {
 
     { ( { data, loading, error} ) => {
 
-      if (loading) return <div>Loading</div>;
+      if (loading) return <Spinner/>;
 
       if (error) return <div>Error</div>;
 
