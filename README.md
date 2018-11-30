@@ -407,6 +407,20 @@ query($_id:ID!) {
     $ cd ../client/
     $ npm install --save react-ckeditor-component
 
+<br/>
+
+### 69. Intro to React Pose Animation Library
+
+https://popmotion.io/pose/
+
+
+<br/>
+
+### 70. Add React Pose Animation to Home Page
+
+    $ cd ../client/
+    $ npm install --save react-pose
+
 
 ---
 

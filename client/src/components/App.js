@@ -3,9 +3,38 @@ import "./App.css";
 import { Query } from 'react-apollo';
 import { GET_ALL_RECIPES } from 'queries';
 import RecipeItem from 'components/Recipe/RecipeItem';
+import posed from 'react-pose';
 
+const RecipeList = posed.ul({
+  shown: {
+    x: '0%',
+    staggerChildren: 100
+  }, 
+  hidden: {
+    x: '-100%'
+  }
+});
 
-const App = () => (
+class App extends React.Component {
+
+  state = {
+    on: false
+  };
+
+  componenDidMount() {
+    setTimeout(this.sledeIn, 200);
+  }
+
+  sledeIn = () => {
+    this.setState({
+      on: !this.state.on
+    })
+  }
+
+  render() {
+
+  return (
+
   <div className="App">
     <h1 className="main-title">Find Recipes You <strong>Love</strong></h1>
 
@@ -18,13 +47,17 @@ const App = () => (
 
       // console.log(data);
 
+      const { on } = this.state;
+
       return (
-        <ul className="cards">{data.getAllRecipes.map(recipe => <RecipeItem key={recipe._id} {...recipe} />)}</ul>
+        <RecipeList 
+          pose={on ? 'shown' : 'hidden'}
+          className="cards">{data.getAllRecipes.map(recipe => <RecipeItem key={recipe._id} {...recipe} />)}</RecipeList>
       )
     }}
   </Query>
 
   </div>
-);
+  )}};
 
 export default App;
