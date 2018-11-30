@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import LikeRecipe from 'components/Recipe/LikeRecipe';
 import { Query } from 'react-apollo';
 import { GET_RECIPE } from '../../queries';
 
@@ -26,7 +27,7 @@ const RecipePage = ({ match }) => {
       <p> Likes: {data.getRecipe.likes}</p>
       <p> Created By: {data.getRecipe.username}</p>
 
-      <button>Like</button>
+      <LikeRecipe />
       
       </div>);
     }}

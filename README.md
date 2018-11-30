@@ -352,6 +352,10 @@ query($_id:ID!) {
 
 ### 56. Provide Default Text for User Without Recipes
 
+<br/>
+
+### 57. Create LikeRecipe Component and Hide If Not Auth
+
 ---
 
 **Marley**

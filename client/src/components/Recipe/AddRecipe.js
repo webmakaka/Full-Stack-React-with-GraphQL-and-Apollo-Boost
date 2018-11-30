@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'; 
 import { Mutation } from 'react-apollo';
-import { ADD_RECIPE, GET_ALL_RECIPES } from 'queries';
+import { ADD_RECIPE, GET_ALL_RECIPES, GET_USER_RECIPES } from 'queries';
 import Error from 'components/Error';
 import withAuth from 'components/HOC/withAuth'
 
