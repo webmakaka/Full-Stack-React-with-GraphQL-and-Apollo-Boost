@@ -34,9 +34,7 @@ class Signin extends React.Component {
 
   validateForm = () => {
     const { username, password } = this.state;
-
     const isInvalid = !username || !password;
-
     return isInvalid;
   }
 

@@ -368,7 +368,13 @@ query($_id:ID!) {
 
 ### 60. Create and Implement unlikeRecipe Mutation with Optimistic UI
 
+<br/>
 
+### 61. Prepare for Deployment
+
+<br/>
+
+### 62. Use Fragments to Clean Up Queries
 
 ---
 

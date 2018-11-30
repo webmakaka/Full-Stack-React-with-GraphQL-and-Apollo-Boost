@@ -99,12 +99,9 @@ class LikeRecipe extends React.Component {
 
       )}
 
-      
-
     </Mutation>
 
     )
-
   }
 }
 

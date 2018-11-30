@@ -8,7 +8,6 @@ const handleDelete = (deleteUserRecipe) => {
   const confirmDelete = window.confirm('Are you sure you want to delete this recipe?');
   if (confirmDelete) {
     deleteUserRecipe().then(({ data }) => {
-      console.log(data);
     })
   }
 };
