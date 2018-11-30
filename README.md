@@ -396,6 +396,10 @@ query($_id:ID!) {
 
 ### 66. Display Recipe Image on Home Page, Build Card
 
+<br/>
+
+### 67. Style Recipe Page
+
 ---
 
 **Marley**
