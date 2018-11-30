@@ -340,6 +340,14 @@ query($_id:ID!) {
 
 ### 53. Add Optimistic UI to deleteUserRecipe Mutation
 
+<br/>
+
+### 54. Add refetchQueries to deleteUserRecipe Mutation
+
+<br/>
+
+### 55. Add refetchQueries to addRecipe Mutation
+
 ---
 
 **Marley**
