@@ -392,6 +392,10 @@ query($_id:ID!) {
 
 ### 65. Adds imageUrl field on Recipe model and imageUrl input in addRecipe
 
+<br/>
+
+### 66. Display Recipe Image on Home Page, Build Card
+
 ---
 
 **Marley**
