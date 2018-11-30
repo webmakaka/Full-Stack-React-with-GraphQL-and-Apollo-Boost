@@ -336,6 +336,10 @@ query($_id:ID!) {
 
 ### 52. Add and Implement deleteUserRecipe Mutation
 
+<br/>
+
+### 53. Add Optimistic UI to deleteUserRecipe Mutation
+
 ---
 
 **Marley**
