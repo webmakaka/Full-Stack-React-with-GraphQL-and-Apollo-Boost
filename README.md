@@ -364,6 +364,12 @@ query($_id:ID!) {
 
 ### 59. Develop Client-side Logic to Properly Toggle Like
 
+<br/>
+
+### 60. Create and Implement unlikeRecipe Mutation with Optimistic UI
+
+
+
 ---
 
 **Marley**
