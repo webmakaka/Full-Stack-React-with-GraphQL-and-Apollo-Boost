@@ -1,5 +1,7 @@
 # [Udemy, Reed Barger] Full-Stack React with GraphQL and Apollo Boost [2018, ENG]
 
+**Final App:** <br/>
+http://react-apollo-recipes.herokuapp.com/
 
 <br/>
 
@@ -375,6 +377,16 @@ query($_id:ID!) {
 <br/>
 
 ### 62. Use Fragments to Clean Up Queries
+
+<br/>
+
+### 63. Deploy to Heroku
+
+-- skipped
+
+<br/>
+
+### 64. Add Additional CSS to Project
 
 ---
 
