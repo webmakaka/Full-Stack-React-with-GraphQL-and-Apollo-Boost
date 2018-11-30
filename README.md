@@ -400,6 +400,14 @@ query($_id:ID!) {
 
 ### 67. Style Recipe Page
 
+<br/>
+
+### 68. Add CKEditor Component to AddRecipe Page for Formatted Instructions
+
+    $ cd ../client/
+    $ npm install --save react-ckeditor-component
+
+
 ---
 
 **Marley**

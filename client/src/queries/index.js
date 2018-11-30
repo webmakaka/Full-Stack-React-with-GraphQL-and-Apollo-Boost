@@ -48,7 +48,7 @@ export const ADD_RECIPE = gql`
       category: $category,
       instructions: $instructions,
       username: $username) {
-        ...completeRecipe
+        ...CompleteRecipe
     }
   }
 

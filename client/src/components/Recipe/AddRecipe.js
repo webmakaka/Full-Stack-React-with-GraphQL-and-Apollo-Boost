@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'; 
+import CKEditor from 'react-ckeditor-component'; 
 import { Mutation } from 'react-apollo';
 import { ADD_RECIPE, GET_ALL_RECIPES, GET_USER_RECIPES } from 'queries';
 import Error from 'components/Error';
@@ -37,10 +38,14 @@ class AddRecipe extends React.Component {
     });
   }
 
+  handleEditorChange = (event) => {
+    const newContent =event.editor.getData();
+    this.setState({ instructions: newContent });
+  }
+
   handleSubmit = (event, addRecipe) => {
     event.preventDefault();
     addRecipe().then(({ data }) => {
-      //console.log(data);
       this.clearState();
       this.props.history.push("/");
     });
@@ -50,7 +55,7 @@ class AddRecipe extends React.Component {
     const { name, imageUrl, category, description, instructions } = this.state;
     const isInvalid = !name || !imageUrl || !category || !description || !instructions;
     return isInvalid;
-  }
+  };
 
   updateCache = (cache, { data: { addRecipe } }) => {
     const { getAllRecipes } = cache.readQuery({ query: GET_ALL_RECIPES});
@@ -101,7 +106,12 @@ class AddRecipe extends React.Component {
 
             <input type="text" name="description" placeholder="Add description" onChange={this.handleChange} value={description} />
 
-            <textarea name="instructions" placeholder="Add instructions" onChange={this.handleChange} value={instructions} ></textarea>
+            <label htmlFor="instructions">Add Instructions</label>
+            <CKEditor 
+              name="instructions"
+              content={instructions}
+              events={{ change: this.handleEditorChange}}
+            />
 
             <button disabled={loading || this.validateForm()} type="submit" className="button-primary">Submit</button>
 
