@@ -332,6 +332,10 @@ query($_id:ID!) {
 
 ### 51. Add Route Protection with withAuth Component
 
+<br/>
+
+### 52. Add and Implement deleteUserRecipe Mutation
+
 ---
 
 **Marley**
