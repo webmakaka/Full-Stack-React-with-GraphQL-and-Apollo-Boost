@@ -356,6 +356,10 @@ query($_id:ID!) {
 
 ### 57. Create LikeRecipe Component and Hide If Not Auth
 
+<br/>
+
+### 58. Add and Implement likeRecipe Mutation
+
 ---
 
 **Marley**
