@@ -348,6 +348,10 @@ query($_id:ID!) {
 
 ### 55. Add refetchQueries to addRecipe Mutation
 
+<br/>
+
+### 56. Provide Default Text for User Without Recipes
+
 ---
 
 **Marley**
