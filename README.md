@@ -434,8 +434,13 @@ http://www.davidhu.io/react-spinners/
 
 ### 72. Style Searchbar and Redeploy
 
+<br/>
+
 ---
+
+<br/>
 
 **Marley**
 
-<a href="https://jsdev.org">jsdev.org</a>  
+Any questions on eng: https://jsdev.org/chat/  
+Любые вопросы на русском: https://jsdev.ru/chat/
